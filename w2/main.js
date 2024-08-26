@@ -22,7 +22,7 @@ const homeSize = 2;
 // 3. Evaluate your food choices
 const  foodChoices = 8;
 // 4. Examine your water consumption
-const water usage = 3;
+const waterusage = 3;
 // 5. Determine how many household purchases you make per year
 const householdPurchases = 10;
 // 6. Consider how much waste you produce
