@@ -53,9 +53,24 @@ function displayOutput() {
   for (arr of cfpData) {
     console.log(arr);
     const output = document.getElementById("output");
-    const newP = document.createElement("pgh");
+    const newP = document.createElement("p");
     newP.textContent = `Carbon Footprint total is ${arr[4]}`;
+    const newP2 = document.createElement("p");
+    const newP3 = document.createElement("p");
+    const newP4 = document.createElement("p");
+    const newP5 = document.createElement("p");
+    
+    newP2.textContent = `Based on number in the home: ${arr[0]}`;
+    newP3.textContent = `Score for household members: ${arr[2]}`;
+    newP4.textContent = `House size is: ${arr[1]}`;
+    newP5.textContent = `Score for house size: ${arr[3]}`;
+
     output.appendChild(newP);
+    output.appendChild(newP2);
+    output.appendChild(newP3);
+    output.appendChild(newP4);
+    output.appendChild(newP5);
+
   }
 }
 
