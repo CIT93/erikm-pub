@@ -54,25 +54,17 @@ function displayOutput() {
     console.log(arr);
 
     const output = document.getElementById("output");
-    const newP = document.createElement("p");
-    newP.textContent = `Carbon Footprint total is ${arr[4]}`;
-    const newP2 = document.createElement("p");
-    const newP3 = document.createElement("p");
-    const newP4 = document.createElement("p");
-    const newP5 = document.createElement("p");
-    
-    newP2.textContent = `Based on number in the home: ${arr[0]}`;
-    
-    newP3.textContent = `Score for household members: ${arr[2]}`;
-    newP4.textContent = `House size is: ${arr[1]}`;
-    newP5.textContent = `Score for house size: ${arr[3]}`;
+    const newH2 = document.createElement("h2");
+    newH2.textContent = `Carbon Footprint total is ${arr[4]}`;
+    const newH3 = document.createElement("h3");
+    newH3.textContent = `Based on number in and size of home`;
+    const newp = document.createElement("p");
+    newp.textContent = `This number is based on the number of people in the house of ${arr[0]} (score: ${arr[3]}),`;
+    newp.textContent += `and a ${arr[1]} size of home (score:${arr[2]}).`;
 
-    output.appendChild(newP);
-    output.appendChild(newP2);
-    output.appendChild(newP3);
-    output.appendChild(newP4);
-    output.appendChild(newP5);
-
+    output.appendChild(newH2);
+    output.appendChild(newH3);
+    output.appendChild(newp);
   }
 }
 
